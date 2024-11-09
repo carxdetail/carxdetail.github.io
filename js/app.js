@@ -4,6 +4,7 @@ const opt_mechanic = document.querySelector('.s1>.opts>.opt2')
 const mechanic = document.querySelector('.mechanic')
 const esthetic = document.querySelector('.esthetic')
 const interior_detail = document.querySelector('.esthetic>.opts>.opt1')
+const exterior_detail = document.querySelector('.esthetic>.opts>.opt2')
 const back_s1 = document.querySelector('.mechanic>.back_s1')
 
 function opt_clicked_animation() {
@@ -37,10 +38,10 @@ function back_s1_animation() {
 }
 
 // opt_mechanic.addEventListener('click', () => {
-    // opt_clicked_animation()
-    // setTimeout(()=>{
-        // mechanic.style.transform = 'translate(0%, 0%) scale(1)'
-    // },250)
+//     opt_clicked_animation()
+//     setTimeout(()=>{
+//         mechanic.style.transform = 'translate(0%, 0%) scale(1)'
+//     },250)
 // })
 
 opt_esthetic.addEventListener('click', () => {
@@ -52,11 +53,20 @@ opt_esthetic.addEventListener('click', () => {
 
 back_s1.addEventListener('click', () => {
     // mechanic.style.transform = ''
+    esthetic.style.transform = ''
     back_s1_animation()
 })
 
 interior_detail.addEventListener('click', () => {
     // https://buy.stripe.com/cN27sT4OZg4A6Yw5kk
-    // window.location.href = "https://buy.stripe.com/cN27sT4OZg4A6Yw5kk"
-    window.open('https://buy.stripe.com/cN27sT4OZg4A6Yw5kk', '_blank')
+    // window.open('../Appointment.html')
+    window.location.href = '../Appointment.html'
 })
+
+exterior_detail.addEventListener('click', () => {
+    // https://buy.stripe.com/cN27sT4OZg4A6Yw5kk
+    // window.open('../Appointment.html')
+    window.location.href = '../Appointment.html'
+})
+
+// https://calendar.google.com/calendar/u/6?cid=Y2FyeGRldGFpbGluZzEwMUBnbWFpbC5jb20
