@@ -1,0 +1,63 @@
+.esthetic {
+    position: absolute;
+    transform: translate(100%, 0%) scale(0.5);
+    width: 100%;
+    height: 100%;
+    transition: 0.9s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.esthetic .opts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.esthetic .opts .opts-btn {
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.esthetic .opts .opts-btn:hover {
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 35px 1px rgba(255, 255, 255, 0.5);
+}
+
+.esthetic .opts .opts-btn:hover .icon {
+    transform: translateY(-20px) scale(1.2);
+}
+
+.esthetic .opts .opts-btn .icon {
+    transition: 0.2s;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    filter: invert(1);
+}
+
+.esthetic .opts .opt1 .icon {
+    transform: rotateY(180deg);
+}
+
+.esthetic .opts .opt1:hover .icon {
+    transform: translateY(-20px) scale(1.2) rotateY(180deg);
+}
+
+.back_s1 {
+    position: absolute;
+    font-size: 30px;
+    top: 0%;
+    cursor: pointer;
+    left: 0%;
+}
